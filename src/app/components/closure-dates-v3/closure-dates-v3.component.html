@@ -1,0 +1,268 @@
+<div class="delivery-closures" role="main">
+
+
+
+  <div class="calendar-info container-fluid" role="region" aria-label="Delivery Closure Summary Section">
+        <div class="row pt-3 align-items-start">
+            <div class="col-12 col-md-6 offset-md-3 flex-column pt-3">
+
+                <h2 class="section-heading text-md-center">Quick Select your Closed Days</h2>
+
+                <div class="d-flex year-picker">
+                    <form *ngIf="calendarArray">
+                        <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic"
+                            
+                            aria-label="Please select a year to specific delivery closures for">
+                            <label ngbButtonLabel class="btn-year" tabindex="0">
+                                <input ngbButton type="radio" active value="begin" > 2020
+                            </label>
+                            <label ngbButtonLabel class="btn-year" tabindex="0">
+                                <input ngbButton type="radio" value="middle" > 2021
+                            </label>
+                            <label ngbButtonLabel class="btn-year" tabindex="0">
+                                <input ngbButton type="radio" value="end" > 2022
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  <div class="calendar-container pt-2 pb-5" role="region"
+    aria-label="Select your delivery closures from the calendar below">
+
+    <div class="calendars">
+
+      <button  class="btn-icon next-left" 
+        aria-label="scroll calendar left">
+        <svg class="icon " focusable="false">
+          <use xlink:href="assets/static/icons/bootstrap-caret-left.svg#asset"></use>
+          <title></title>
+        </svg>
+      </button>
+      <button  class="btn-icon next-right" 
+        aria-label="scroll calendar right">
+        <svg class="icon " focusable="false">
+          <use xlink:href="assets/static/icons/bootstrap-caret-right.svg#asset"></use>
+          <title></title>
+        </svg>
+      </button>
+
+      <div #monthsContent class="scrollmenu">
+
+        <div class="card" *ngFor="let month of calendarArray; let i = index" aria-label="Calendar month">
+
+          <h3 class="text-md-center">{{ month1 }} {{ currentYear1 }}</h3>
+
+          <table role="presentation">
+            <tr *ngFor="let row of month;">
+              <td *ngFor="let column of days; let i = index;">
+                <div *ngIf="row[i].dateNumber !== '0'">
+
+                  <button *ngIf="!row[i].isPast && !row[i].isDefault" class="btn-date" [ngClass]="{
+                                            'selected' : row[i].isSelected,
+                                            'unselected' : !row[i].isSelected}"
+                    >
+
+                    <svg class="icon " focusable="false">
+                      <use xlink:href="assets/static/icons/icon-checkmark.svg#asset"></use>
+                      <title></title>
+                    </svg>
+                    <title></title>
+                    <div class="day">{{row[i].dayOfWeek}}</div>
+                    <div class="number">{{row[i].dateNumber }}</div>
+                  </button>
+                  <div *ngIf="row[i].isPast || row[i].isDefault" class="btn-date"
+                  [ngClass]="{
+                  'today' : row[i].dateKey ,
+                  'passed' : row[i].isPast && row[i].isDefault,
+                  'passed-selected' : row[i].isSelected && row[i].isPast && !row[i].isDefault,
+                  'passed-unselected' : !row[i].isSelected && row[i].isPast && !row[i].isDefault}"
+                  
+                  triggers="click:blur"
+                    >
+
+                    <svg *ngIf="row[i].isDefault" class="icon logo" focusable="false">
+                      <use xlink:href="assets/static/icons/icon-CH-logo.svg#asset"></use>
+                      <title></title>
+                    </svg>
+                    <svg *ngIf="!row[i].isDefault" class="icon " focusable="false">
+                      <use xlink:href="assets/static/icons/icon-checkmark.svg#asset"></use>
+                      <title></title>
+                    </svg>
+                    <div class="day">{{row[i].dayOfWeek}}</div>
+                    <div class="number">{{row[i].dateNumber}}</div>
+                  </div>
+
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<!--
+  <ng-template #contentSelectMore let-modal role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="select-more">
+      <div class="modal-header">
+
+       
+
+      </div>
+      <div class="modal-body d-flex flex-column align-items-start" aria-label="">
+
+        <svg class="icon header-icon align-self-center" focusable="false">
+
+          <use xlink:href="assets/static/icons/icon-account.svg#asset"></use>
+
+          <title>close</title>
+        </svg>
+        
+        <h2 class="title align-self-center mt-3 ">Pharmacy Location Closures</h2>
+
+        <p class="pt-3">Your selected closure dates will apply to:</p>
+
+        <div class="selected-store d-flex justify-content-between align-items-center border-bottom border-top w-100">
+          <div class="font-weight-bold">{{ displayPharmacyName }}</div>
+          <div class="font-size-xs">Acct #{{ displayPharmacyId }}</div>
+        </div>
+
+        <form [formGroup]="selectMPForm" class="w-100 pt-4 ">
+          <div class="d-flex flex-row flex-nowrap pr-2 align-items-end">
+            <div>Would you like to apply the same dates to other locations associated with your login?</div>
+            <div class="d-flex flex-row align-items-end pl-5">
+              <label class="radio mb-0">
+                Yes
+                <input type="radio" formControlName="selectLocations" id="radioYes" value="yes" name="selectLocations"
+                  (change)="onSelctLocations($event)" />
+                <span class="filled-in"></span>
+              </label>
+              <label class="radio mb-0 ml-4">
+                No
+                <input type="radio" formControlName="selectLocations" id="radioNo" value="no" name="selectLocations"
+                  (change)="onSelctLocations($event)" />
+                <span class="filled-in"></span>
+              </label>
+            </div>
+          </div>
+          <div class="p-5 d-flex justify-content-center">
+            <input [disabled]="!showNextButton" type="submit" (click)="nextModal()" role="button" value="Next"
+              class="btn btn-primary" />
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </ng-template>
+-->
+
+  <!-- <ng-template #contentLocations let-modal role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="multi-store">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body d-flex flex-column align-items-start pl-0 pr-0" aria-label="">
+
+        <svg class="icon header-icon align-self-center" focusable="false">
+          <use xlink:href="assets/static/icons/icon-account.svg#asset"></use>
+          <title>close</title>
+        </svg>
+        <h2 class="title align-self-center mt-3 ">Pharmacy Location Closures</h2>
+
+        <p class="pt-3 w-100 pl-5 pr-5">Choose the other locations for which you would like to apply your
+          selected closure dates.</p>
+
+
+
+        <app-multiple-pharmacies [closureDates]="inputClosureDates" [addedDates]="inputAddedDates"
+          [removedDates]="inputRemovedDates" class="w-100">
+        </app-multiple-pharmacies>
+
+      </div>
+    </div>
+  </ng-template> -->
+
+  <!-- <ng-template #contentConfirmation let-modal role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="confirmation">
+      <div class="modal-header">
+
+        <button type="button" class="close" (click)="datesSubmitted()" aria-label="Close">
+          <svg class="icon " focusable="false">
+            <use xlink:href="assets/static/icons/icon-close.svg#asset"></use>
+            <title>close</title>
+          </svg>
+        </button>
+
+      </div>
+      <div class="modal-body d-flex flex-column align-items-start"
+        aria-label="Your closure dates have been submitted. We'll send a confirmation to the email addresses connected to this account if one exists, otherwise please enter an email below.">
+
+        <svg class="icon header-icon text-success align-self-center" focusable="false">
+          <use xlink:href="assets/static/icons/icon-check-outline.svg#asset"></use>
+          <title>close</title>
+        </svg>
+        <h2 class="title align-self-center mt-3 mb-0">Your Closure Updates</h2>
+        <h2 class="title align-self-center">Have Been Submitted</h2>
+
+
+        <p *ngIf="currentUserEmail" class="pt-3 w-100">We've sent a confirmation to this email address: </p>
+
+        <p *ngIf="currentUserEmail" class="confirmation-email pt-2 pb-2">{{currentUserEmail}}</p>
+
+        <p *ngIf="!currentUserEmail" class="w-100">Looks like we don’t have an email address on file. Please
+          enter an address, so we can send you an email confirmation of your pharmacy closure dates.</p>
+        <input *ngIf="!currentUserEmail" type="email" [(ngModel)]="additionalEmails"
+          class="form-control align-self-start w-100 mb-3" placeholder="Add email address">
+        <button *ngIf="!currentUserEmail" (click)="noEmailWithAcct(additionalEmails)" type="button" role="button"
+          class="btn btn-primary mt-2 mb-4">Confirm</button>
+
+        <button *ngIf="hibeAddEmailBtn" class="add-email" (click)="addEmailBtn()" role="button">
+          <svg class="icon " focusable="false">
+            <use xlink:href="assets/static/icons/icon-add.svg#asset"></use>
+            <title>add email</title>
+          </svg>
+          <span class="ml-1">Send to Another Email Address</span>
+        </button>
+        <form *ngIf="addingEmail" [formGroup]="emailsForm" class="w-100">
+          <div formArrayName="emails">
+            <div *ngFor="let em of emails.controls; let i=index;">
+              <input *ngIf="addingEmail" type="email" class="form-control w-100 mb-3" placeholder="Add email address"
+                [formControlName]="i">
+            </div>
+            <button class="add-email" (click)="addEmail()" role="button">
+              <svg class="icon " focusable="false">
+                <use xlink:href="assets/static/icons/icon-add.svg#asset"></use>
+                <title>add email</title>
+              </svg>
+              <span class="ml-1">Send to Another Email Address</span>
+            </button>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button *ngIf="addingEmail" (click)="updatePharmacyClosureDates(emails.value)" type="button" role="button"
+          class="btn btn-primary">Confirm</button>
+      </div>
+    </div>
+  </ng-template> -->
+
+  <!-- <div class="calendar-footer p-3 p-md-0 pt-md-4 pb-md-4 d-flex" [ngClass]="{'stuck' : isDateSelected}">
+    <img src="assets/static/images/CH-logo-sticky-svg.svg" alt="Cardinal Health" />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-column flex-md-row-reverse">
+          <button [disabled]="!isDateSelected " (click)="getClosureDates(contentSelectMore)" class="btn btn-primary"
+            role="button">Submit</button>
+          <button *ngIf="isDateSelected" (click)="disableSubmit()" class="btn btn-outline-primary"
+            role="button">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+</div>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+    <defs>
+        <symbol id="asset" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 0a16 16 0 1016 16A16 16 0 0016 0zm10.13 25.36c-.23.25-.48.49-.73.73a9.32 9.32 0 00-9.4-6.5 9.35 9.35 0 00-9.4 6.5 13.82 13.82 0 1119.53-.73zM16 6.71a5.66 5.66 0 105.66 5.66A5.65 5.65 0 0016 6.71z"/>
+        </symbol>
+    </defs>
+    <use xlink:href="#asset" />
+</svg>

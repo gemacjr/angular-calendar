@@ -1,0 +1,620 @@
+{
+    "orderUser": false,
+    "firstName": "Retail",
+    "lastName": "Independent20",
+    "userSettings": {
+        "memberGroups": [
+            "cn=G-EXT-GA-PHARMACEUTICAL_DISTRIBUTION__ORDER_EXPRESS_REPORTING__ORDER_EXPRESS_REPORTING__PREMIUM_AAP,ou=groups,ou=External,dc=cardinalhealth,dc=com",
+            "cn=G-EXT-GA-PHARMACEUTICAL_DISTRIBUTION__TRACK_AND_TRACE_REPORTING__TRACK_AND_TRACE__REGULAR,ou=groups,ou=External,dc=cardinalhealth,dc=com",
+            "cn=G-EXT-GA-NON_EXPIRING_PASSWORD_ACCOUNTS,ou=groups,ou=external,dc=cardinalhealth,dc=com",
+            "cn=G-EXT-GA-PHARMACEUTICAL_DISTRIBUTION__RETAIL_INDEPENDENT__RETAIL_INDEPENDENT_ORDERING__ADMIN,ou=groups,ou=External,dc=cardinalhealth,dc=com",
+            "cn=G-EXT-GA-PHARMACEUTICAL_DISTRIBUTION__ORDER_EXPRESS_REPORTING__ORDER_EXPRESS_REPORTING__STANDARD,ou=groups,ou=External,dc=cardinalhealth,dc=com",
+            "cn=G-EXT-GA-PHARMACEUTICAL_DISTRIBUTION__ACUTE_CARE__ACUTE_CARE_ORDERING__ADMIN,ou=groups,ou=External,dc=cardinalhealth,dc=com"
+        ]
+    },
+    "mobileNumber": "6143786532",
+    "id": "retind20",
+    "shipTos": [
+        {
+            "marketingPrograms": [
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2010-04-27"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-04-22"
+                },
+                {
+                    "code": 408,
+                    "endDate": "9999-12-31",
+                    "description": "WEB PAY",
+                    "effectiveDate": "2011-10-03"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "SALES DEMO (9) KNOXVILLETEST",
+            "alias": "KNOXVILLE DEMO",
+            "id": "9-671170",
+            "customerNumber": 671170,
+            "distributionCenter": 9
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2010-04-27"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-04-22"
+                },
+                {
+                    "code": 408,
+                    "endDate": "9999-12-31",
+                    "description": "WEB PAY",
+                    "effectiveDate": "2011-10-03"
+                },
+                {
+                    "code": 861,
+                    "endDate": "9999-12-31",
+                    "description": "ORDER HISTORY-GLASS",
+                    "effectiveDate": "2018-04-26"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "SALES DEMO (11) LAKELANDTEST",
+            "alias": "483239 (DEMO)",
+            "id": "11-483239",
+            "customerNumber": 483239,
+            "distributionCenter": 11
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2010-04-27"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-04-22"
+                },
+                {
+                    "code": 408,
+                    "endDate": "9999-12-31",
+                    "description": "WEB PAY",
+                    "effectiveDate": "2011-10-03"
+                },
+                {
+                    "code": 861,
+                    "endDate": "9999-12-31",
+                    "description": "ORDER HISTORY-GLASS",
+                    "effectiveDate": "2018-04-26"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2016-12-15"
+                }
+            ],
+            "name": "SALES DEMO (26) GREENSBOROTEST",
+            "alias": "Test acct MY PHARMACY",
+            "id": "26-388337",
+            "customerNumber": 388337,
+            "distributionCenter": 26
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 1,
+                    "endDate": "9999-12-31",
+                    "description": "CARDINAL ACCESS",
+                    "effectiveDate": "2010-01-21"
+                },
+                {
+                    "code": 68,
+                    "endDate": "9999-12-31",
+                    "description": "ENHANCED ORDERING",
+                    "effectiveDate": "2010-01-21"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 135,
+                    "endDate": "9999-12-31",
+                    "description": "CSOS",
+                    "effectiveDate": "2010-01-21"
+                },
+                {
+                    "code": 408,
+                    "endDate": "9999-12-31",
+                    "description": "WEB PAY",
+                    "effectiveDate": "2016-02-24"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "TEST ACCT CUST SERVICE",
+            "alias": "26-387958 OLD CSOS",
+            "id": "26-387958",
+            "customerNumber": 387958,
+            "distributionCenter": 26
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2010-05-11"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-05-11"
+                },
+                {
+                    "code": 408,
+                    "endDate": "9999-12-31",
+                    "description": "WEB PAY",
+                    "effectiveDate": "2011-10-03"
+                },
+                {
+                    "code": 817,
+                    "endDate": "9999-12-31",
+                    "description": "TIERED SOURCE REBATE",
+                    "effectiveDate": "2018-04-04"
+                },
+                {
+                    "code": 861,
+                    "endDate": "9999-12-31",
+                    "description": "ORDER HISTORY-GLASS",
+                    "effectiveDate": "2018-04-26"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "SALES DEMO (32) VALENCIATEST",
+            "alias": "SALES DEMO (32) VALENCIATEST",
+            "id": "32-70316",
+            "customerNumber": 70316,
+            "distributionCenter": 32
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2010-05-11"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-05-11"
+                },
+                {
+                    "code": 408,
+                    "endDate": "9999-12-31",
+                    "description": "WEB PAY",
+                    "effectiveDate": "2011-10-03"
+                },
+                {
+                    "code": 861,
+                    "endDate": "9999-12-31",
+                    "description": "ORDER HISTORY-GLASS",
+                    "effectiveDate": "2018-04-26"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "SALES DEMO (35) SALT LAKE TEST",
+            "alias": "SALT LAKE DEMO",
+            "id": "35-226956",
+            "customerNumber": 226956,
+            "distributionCenter": 35
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 2,
+                    "endDate": "9999-12-31",
+                    "description": "CARDINAL SOURCE",
+                    "effectiveDate": "2004-06-28"
+                },
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2004-06-28"
+                },
+                {
+                    "code": 80,
+                    "endDate": "9999-12-31",
+                    "description": "INVENTORY MANAGER (CIM) INVCE",
+                    "effectiveDate": "2005-03-18"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-06-22"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "DEMO ACCTTEST",
+            "alias": "15-711952 CIM LEGACY",
+            "id": "15-711952",
+            "customerNumber": 711952,
+            "distributionCenter": 15
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 861,
+                    "endDate": "9999-12-31",
+                    "description": "ORDER HISTORY-GLASS",
+                    "effectiveDate": "2018-04-12"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "CONSUMER HEALTH DEMOTEST",
+            "alias": "",
+            "id": "3-629333",
+            "customerNumber": 629333,
+            "distributionCenter": 3
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                },
+                {
+                    "code": 10,
+                    "endDate": "9999-12-31",
+                    "description": "FIRST SCRIPT RETAIL IND",
+                    "effectiveDate": "2010-09-03"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-09-24"
+                },
+                {
+                    "code": 313,
+                    "endDate": "9999-12-31",
+                    "description": "FIRST SCRIPT LTC",
+                    "effectiveDate": "2010-09-03"
+                },
+                {
+                    "code": 314,
+                    "endDate": "9999-12-31",
+                    "description": "FIRST SCRIPT ACUTE CARE",
+                    "effectiveDate": "2010-09-03"
+                },
+                {
+                    "code": 861,
+                    "endDate": "9999-12-31",
+                    "description": "ORDER HISTORY-GLASS",
+                    "effectiveDate": "2018-04-24"
+                }
+            ],
+            "name": "SOURCE PLUS",
+            "alias": "HUDSON",
+            "id": "24-464498",
+            "customerNumber": 464498,
+            "distributionCenter": 24
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 2,
+                    "endDate": "9999-12-31",
+                    "description": "CARDINAL SOURCE",
+                    "effectiveDate": "2011-01-07"
+                },
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2011-01-07"
+                },
+                {
+                    "code": 80,
+                    "endDate": "9999-12-31",
+                    "description": "INVENTORY MANAGER (CIM) INVCE",
+                    "effectiveDate": "2011-01-07"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2011-01-07"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "CIM TEST ACCOUNT OFM",
+            "alias": "",
+            "id": "8-103928",
+            "customerNumber": 103928,
+            "distributionCenter": 8
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 2,
+                    "endDate": "9999-12-31",
+                    "description": "CARDINAL SOURCE",
+                    "effectiveDate": "2009-07-22"
+                },
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2009-07-22"
+                },
+                {
+                    "code": 80,
+                    "endDate": "9999-12-31",
+                    "description": "INVENTORY MANAGER (CIM) INVCE",
+                    "effectiveDate": "2009-07-22"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2011-05-20"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "CARDINAL.COM TEST ACCOUNT",
+            "alias": "Kinray Test",
+            "id": "15-717652",
+            "customerNumber": 717652,
+            "distributionCenter": 15
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 6,
+                    "endDate": "9999-12-31",
+                    "description": "HOME HEALTH CARE",
+                    "effectiveDate": "2009-09-18"
+                },
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2009-09-18"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2009-09-18"
+                },
+                {
+                    "code": 998,
+                    "endDate": "9999-12-31",
+                    "description": "OUT OF SCOPE FOR PMOD",
+                    "effectiveDate": "2016-07-14"
+                }
+            ],
+            "name": "ZZWALGS PRICE AS MSTR ACCTTEST",
+            "alias": "",
+            "id": "15-717738",
+            "customerNumber": 717738,
+            "distributionCenter": 15
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 23,
+                    "endDate": "9999-12-31",
+                    "description": "PROFIT PAK",
+                    "effectiveDate": "2010-04-27"
+                },
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 207,
+                    "endDate": "9999-12-31",
+                    "description": "ACCOUNTSOURCE RX",
+                    "effectiveDate": "2011-03-14"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2010-04-22"
+                },
+                {
+                    "code": 408,
+                    "endDate": "9999-12-31",
+                    "description": "WEB PAY",
+                    "effectiveDate": "2011-10-03"
+                },
+                {
+                    "code": 568,
+                    "endDate": "9999-12-31",
+                    "description": "ONLINE AD CREATOR",
+                    "effectiveDate": "2012-04-20"
+                },
+                {
+                    "code": 861,
+                    "endDate": "9999-12-31",
+                    "description": "ORDER HISTORY-GLASS",
+                    "effectiveDate": "2018-04-13"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "SALES DEMO (8) WHEELING TEST",
+            "alias": "*OE DEMO",
+            "id": "8-103320",
+            "customerNumber": 103320,
+            "distributionCenter": 8
+        },
+        {
+            "marketingPrograms": [
+                {
+                    "code": 92,
+                    "endDate": "9999-12-31",
+                    "description": "ERECEIVER",
+                    "effectiveDate": "2019-11-21"
+                },
+                {
+                    "code": 307,
+                    "endDate": "9999-12-31",
+                    "description": "ORDEREXPRESS",
+                    "effectiveDate": "2015-03-20"
+                },
+                {
+                    "code": 999,
+                    "endDate": "9999-12-31",
+                    "description": "TEST ACCOUNT",
+                    "effectiveDate": "2015-09-11"
+                }
+            ],
+            "name": "CVS FORM A PRC MSTR ACCTTEST",
+            "alias": "",
+            "id": "43-432926",
+            "customerNumber": 432926,
+            "distributionCenter": 43
+        }
+    ],
+    "email": "chris.donovan@cardinalhealth.com"
+}

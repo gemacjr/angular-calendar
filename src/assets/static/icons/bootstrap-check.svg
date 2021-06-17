@@ -1,0 +1,11 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+
+        <defs>
+            <symbol id="asset" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-width="2" fill="none" d="M3 12l6 6l12 -14"/></symbol>
+        </defs>
+        <g>
+            <use xlink:href="#asset"/>
+        </g>
+    </svg>
